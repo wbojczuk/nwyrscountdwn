@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body {
+    margin: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Custom Classes */
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Welcome Block */
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background-color: #aaa;
+    text-align: center;
+}
+.welcome-text {
+    font-size: 5em;
+    font-weight: 500;
+}
+
+/* Clock Styling */
+
+.clock-bg {
+background-image: url('img/fireworks.jpg');
+padding: 10% 0;
+background-size: cover;
+background-repeat: no-repeat;
+background-position-y:bottom;
+}
+
+.current-time-text {
+    font-size: 4rem;
+    text-decoration: underline;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    color: #e6e6e6;
+}
+#currentDate {
+    margin-top: -5px;
+    font-size: 2rem;
+    margin-left: 3%;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    color: #e6e6e6;
+}
+#currentTime {
+    margin-top: -5px;
+    font-size: 2rem;
+    margin-left: 3%;
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    color: #e6e6e6;
+}
+.time-left-text {
+margin-top: 50px;
+
+}
+.time-left-title {
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    font-size: 60px;
+    color: #fff;
+    font-family: "Fjalla One", "sans-serif";
+    text-decoration: underline;
+}
+.time-left-text span:nth-child(n+2){
+    margin-left: 5%;
+}
+.onee span:nth-child(n+2){
+    margin-left: 5%;
+}
+.time-left {
+    display: inline-block;
+    width: 10%;
+    font-family: "Fjalla One";
+  color:#fff;
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+  font-size:48px;
+  text-align:center;
+}
+
+
+#printDateButton {
+    margin-top: 100px;
+}
