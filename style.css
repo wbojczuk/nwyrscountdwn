@@ -90,6 +90,15 @@ margin-top: 50px;
 }
 
 
+/* Testing Area */
+
+.test-section {
+    background-color: #000;
+}
 #printDateButton {
     margin-top: 100px;
+}
+#printDate {
+    color: #fff;
+    display: none;
 }

@@ -6,13 +6,13 @@ function runClock() {
     var currentDay = new Date();
     var timeStr = currentDay.toLocaleTimeString();
     var dateStr = currentDay.toLocaleDateString();
-    var newYear = new Date(2021, 1, 1);
+    var newYear = new Date(2021, 0, 1);
     var nextYear = currentDay.getFullYear() + 1;
     newYear = newYear.setFullYear(nextYear);
     var daysLeft = (newYear - currentDay) / (1000*60*60*24);
 
 
-    // Print Time Left Till New Years
+    // Calc and Print Time Left Until New Years
 
     document.getElementById("daysLeft").innerHTML = Math.floor(daysLeft);
     var hoursLeft = (daysLeft - Math.floor(daysLeft)) * 24;
@@ -23,13 +23,14 @@ function runClock() {
     document.getElementById("secondsLeft").innerHTML = Math.floor(secondsLeft);
 
 
-    // Print Time/Date to Span
+    // Print Current Time/Date to Span
     document.getElementById("currentDate").innerHTML = dateStr;
     document.getElementById("currentTime").innerHTML = timeStr;
 
+    //Test print
+    
+}
 
-    // Test Button
-    function printDate() {
-        document.getElementById("printDate").innerHTML = daysLeft;
-    }
+// Test Button
+function printDate() {;
 }
